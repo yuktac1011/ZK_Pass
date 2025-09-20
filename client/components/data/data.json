@@ -1,0 +1,483 @@
+{
+  "schemas": {
+    "UniquenessCredential": [
+      {
+        "name": "captureMethod",
+        "label": "captureMethod",
+        "type": "select",
+        "placeholder": "Select option"
+      },
+      {
+        "name": "userHash",
+        "label": "userHash",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "reputationLevel",
+        "label": "reputationLevel",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "lastVerificationDate",
+        "label": "lastVerificationDate",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "firstVerificationDate",
+        "label": "firstVerificationDate",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "confidenceScore",
+        "label": "confidenceScore",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "captureDevice",
+        "label": "captureDevice",
+        "type": "select",
+        "placeholder": "Select option"
+      },
+      {
+        "name": "operatingSystem",
+        "label": "operatingSystem",
+        "type": "text",
+        "placeholder": "Type string"
+      }
+    ],
+    "ProofOfPersonhood": [
+      {
+        "name": "firstName",
+        "label": "First Name",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "familyName",
+        "label": "Family Name",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "middleName",
+        "label": "Middle Name",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "alsoKnownAs",
+        "label": "Also Known As",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "dateOfBirth",
+        "label": "Date of Birth",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "governmentIdentifier",
+        "label": "Government Identifier",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "governmentIdentifierType",
+        "label": "Government Identifier Type",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "gender",
+        "label": "Gender",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "phoneNumber",
+        "label": "Phone Number",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "phoneNumberVerified",
+        "label": "Phone Number Verified",
+        "type": "radio",
+        "options": [
+          "True",
+          "False"
+        ]
+      },
+      {
+        "name": "idDocument",
+        "label": "ID Document",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "documentType",
+        "label": "Document Type",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "documentExpirationDate",
+        "label": "Document Expiration Date",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "nameAndFamilyNameAtBirthFamilyName",
+        "label": "Name and Family Name at Birth - Family Name",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "nameAndFamilyNameAtBirthGivenName",
+        "label": "Name and Family Name at Birth - Given Name",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "placeOfBirthLocality",
+        "label": "Place of Birth - Locality",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "placeOfBirthCountryCode",
+        "label": "Place of Birth - Country Code",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "addressListAddressLine1",
+        "label": "Address List - Address Line 1",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "addressListAddressLine2",
+        "label": "Address List - Address Line 2",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "addressListLocality",
+        "label": "Address List - Locality",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "addressListRegion",
+        "label": "Address List - Region",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "addressListCountryCode",
+        "label": "Address List - Country Code",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "addressListPostalCode",
+        "label": "Address List - Postal Code",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "businessAddressAddressLine1",
+        "label": "Business Address - Address Line 1",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "businessAddressAddressLine2",
+        "label": "Business Address - Address Line 2",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "mailingAddressAddressLine1",
+        "label": "Mailing Address - Address Line 1",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "mailingAddressAddressLine2",
+        "label": "Mailing Address - Address Line 2",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "nationalities1CountryCode",
+        "label": "Nationalities - Nationality 1 Country Code",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "nationalities2CountryCode",
+        "label": "Nationalities - Nationality 2 Country Code",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "customStringField1",
+        "label": "Custom String Field 1",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "customStringField2",
+        "label": "Custom String Field 2",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "customNumberField1",
+        "label": "Custom Number Field 1",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "customNumberField2",
+        "label": "Custom Number Field 2",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "customBooleanField1",
+        "label": "Custom Boolean Field 1",
+        "type": "radio",
+        "options": [
+          "True",
+          "False"
+        ]
+      },
+      {
+        "name": "customBooleanField2",
+        "label": "Custom Boolean Field 2",
+        "type": "radio",
+        "options": [
+          "True",
+          "False"
+        ]
+      }
+    ],
+    "KYCVerification": [
+      {
+        "name": "fullLegalName",
+        "label": "Full Legal Name",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "dateOfBirth",
+        "label": "Date of Birth",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "usCitizen",
+        "label": "US Citizen",
+        "type": "radio",
+        "options": [
+          "True",
+          "False"
+        ]
+      },
+      {
+        "name": "emailAddress",
+        "label": "Email Address",
+        "type": "email",
+        "placeholder": "Type string"
+      }
+    ],
+    "AddharData": [
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "dateOfBirth",
+        "label": "Date Of Birth",
+        "type": "date",
+        "placeholder": "Select date"
+      },
+      {
+        "name": "gender",
+        "label": "Gender",
+        "type": "select",
+        "placeholder": "Select option"
+      },
+      {
+        "name": "photoBsa64",
+        "label": "Photo Bsa64",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "house",
+        "label": "House",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "street",
+        "label": "Street",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "landmark",
+        "label": "Landmark",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "villageTownOrCity",
+        "label": "Village, Town, or City",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "district",
+        "label": "District",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "state",
+        "label": "State",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "pincode",
+        "label": "Pincode",
+        "type": "number",
+        "placeholder": "Type number"
+      }
+    ],
+    "KYCAgeCredential": [
+      {
+        "name": "birthday",
+        "label": "birthday",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "documentType",
+        "label": "documentType",
+        "type": "number",
+        "placeholder": "Type integer"
+      }
+    ],
+    "DriversLicenceCredential": [
+      {
+        "name": "name",
+        "label": "name",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "licenceNumber",
+        "label": "licenceNumber",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "country",
+        "label": "country",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "birthDate",
+        "label": "birthDate",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "expiryDate",
+        "label": "expiryDate",
+        "type": "number",
+        "placeholder": "Type integer"
+      },
+      {
+        "name": "publicAddress",
+        "label": "publicAddress",
+        "type": "text",
+        "placeholder": "Type string"
+      }
+    ],
+    "Membership": [
+      {
+        "name": "memberId",
+        "label": "Member ID",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "orgName",
+        "label": "Org name",
+        "type": "text",
+        "placeholder": "Type string"
+      }
+    ],
+    "SignatureVerificationSchema": [
+      {
+        "name": "signature",
+        "label": "Signature",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "displayMethod",
+        "label": "Display Method",
+        "type": "checkbox"
+      }
+    ],
+    "MedicalLicenseCredential": [
+      {
+        "name": "licenseNumber",
+        "label": "licenseNumber",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "specialization",
+        "label": "specialization",
+        "type": "text",
+        "placeholder": "Type string"
+      },
+      {
+        "name": "issueDate",
+        "label": "issueDate",
+        "type": "date",
+        "placeholder": "Select date"
+      },
+      {
+        "name": "issuingAuthority",
+        "label": "issuingAuthority",
+        "type": "text",
+        "placeholder": "Type string"
+      }
+    ]
+  }
+}
