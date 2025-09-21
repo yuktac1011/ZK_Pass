@@ -124,3 +124,124 @@
     @apply bg-accent font-semibold text-accent-foreground;
   }
 }
+
+/* Reset conflicting sidebar styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure no overlapping sidebars */
+.sidebar,
+[role="sidebar"] {
+  position: relative !important;
+  z-index: 40;
+  flex-shrink: 0;
+}
+
+/* Main content area */
+.main-content-wrapper,
+.page-content {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+}
+
+/* App container */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Fix for sticky header */
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* Mobile Menu Animations */
+.mobile-sidebar {
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-sidebar.open {
+  transform: translateX(0);
+}
+
+/* Mobile overlay animation */
+.mobile-overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive scrollbar */
+.overflow-auto::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.overflow-auto::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Mobile menu link hover effects */
+.mobile-menu-link {
+  transition: all 0.2s ease;
+}
+
+.mobile-menu-link:hover {
+  transform: translateX(4px);
+}
+
+/* Hamburger button animation */
+.hamburger-btn {
+  transition: all 0.2s ease;
+}
+
+.hamburger-btn:active {
+  transform: scale(0.95);
+}
+
+/* Ensure content doesn't shift when mobile menu opens */
+@media (max-width: 768px) {
+  .main-content {
+    transition: margin-left 0.3s ease;
+  }
+  
+  .main-content.shifted {
+    margin-left: 0;
+  }
+}
